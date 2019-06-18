@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Piskel-clone</title>
 </head>
 <body>
     <div class="content-wrapper">
@@ -12,13 +12,13 @@
     <div class="resize-canvas__content">
         <div class="resize-canvas__row">
             <span class="resize-canvas__text">width</span>
-            <input type="text" class="resize-canvas__input resize-canvas__input_x" value="36" data-min="3" data-max="356">
+            <input type="text" class="resize-canvas__input resize-canvas__input_x" value="36" data-min="3" data-max="128">
             <span class="resize-canvas__text">px</span>
         </div>
     
         <div class="resize-canvas__row">
             <span class="resize-canvas__text">height</span>
-            <input type="text" class="resize-canvas__input resize-canvas__input_y" value="36" data-min="3" data-max="356">
+            <input type="text" class="resize-canvas__input resize-canvas__input_y" value="36" data-min="3" data-max="128">
             <span class="resize-canvas__text">px</span>
         </div>
     </div>
@@ -67,7 +67,7 @@
     <div class="frame__text"></div>
     <div class="frame__button frame__button_pos_top" data-action="delete"></div>
     <div class="frame__button frame__button_pos_bottom" data-action="clone"></div>
-    <canvas class="frame__canvas"></canvas>
+    <canvas class="frame__canvas">Your browser does not support canvas.</canvas>
 </div>
 
 <div class="pseudo-frame pseudo-frame_sample"></div>
@@ -75,6 +75,36 @@
 <div class="button-create-frame">New frame</div>
 
         </div>
+
+        <div class="preview">
+    <div class="preview__animation-player"></div>
+    <ul class="preview__fps-list">
+        <li class="preview__container-fps-button">
+            <button class="preview__fps-button preview__fps-button_active" data-fps="1">1</button>
+        </li>
+        <li class="preview__container-fps-button">
+            <button class="preview__fps-button" data-fps="2">2</button>
+        </li>
+        <li class="preview__container-fps-button">
+            <button class="preview__fps-button" data-fps="4">4</button>
+        </li>
+        <li class="preview__container-fps-button">
+            <button class="preview__fps-button" data-fps="8">8</button>
+        </li>
+        <li class="preview__container-fps-button">
+            <button class="preview__fps-button" data-fps="16">16</button>
+        </li>
+        <li class="preview__container-fps-button">
+            <button class="preview__fps-button" data-fps="32">32</button>
+        </li>
+        <li class="preview__container-fps-button">
+            <button class="preview__fps-button" data-fps="999">max</button>
+        </li>
+    </ul>
+    
+    <button class="preview__full-screen">Full screen</button>
+</div>
+
 
         <canvas class="main-canvas">Your browser does not support canvas.</canvas>
 
