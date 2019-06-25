@@ -2,159 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Piskel-clone</title>
 </head>
 <body>
-    <div class="content-wrapper">
-        <form class="resize-canvas" action="">
-    <div class="resize-canvas__content">
-        <div class="resize-canvas__row">
-            <span class="resize-canvas__text">width</span>
-            <input type="text" class="resize-canvas__input resize-canvas__input_x" value="36" data-min="3" data-max="128">
-            <span class="resize-canvas__text">px</span>
-        </div>
-    
-        <div class="resize-canvas__row">
-            <span class="resize-canvas__text">height</span>
-            <input type="text" class="resize-canvas__input resize-canvas__input_y" value="36" data-min="3" data-max="128">
-            <span class="resize-canvas__text">px</span>
-        </div>
-    </div>
-</form>
+    <header class="header">
+        <div class="logo"></div>
+        <a class="header__link" href="editor.html">Create Sprite</a>
+    </header>
 
-
-        <div class="export">
-    <div class="export__container">
-        <span class="export__text">Download in GIF format</span>
-        <form class="export__form" action="">
-            <ul class="export__input-list">
-                <li>
-                    <span class="export__input-description">File name</span>
-                    <input class="export__input" type="text" value="newgif" data-data-type="string">
-                </li>
-                <li>
-                    <span class="export__input-description">GIF width (px)</span>
-                    <input class="export__input" type="text" value="200" data-data-type="number" data-size="Width" data-size-max="1200" data-size-min="1">
-                </li>
-                <li>
-                    <span class="export__input-description">GIF height (px)</span>
-                    <input class="export__input" type="text" value="200" data-data-type="number" data-size="Height" data-size-max="1200" data-size-min="1">
-                </li>
-            </ul>
-        </form>
-        <a class="export__link" href="#" download="yourgif.gif">Download</a>
-    </div>
-
-    <div class="export__loading-container">
-        <div class="export__loading">
-            <div class="export__loading-circle export__loading-row1 export__loading-col3"></div>
-            <div class="export__loading-circle export__loading-row2 export__loading-col2"></div>
-            <div class="export__loading-circle export__loading-row2 export__loading-col3"></div>
-            <div class="export__loading-circle export__loading-row2 export__loading-col4"></div>
-            <div class="export__loading-circle export__loading-row3 export__loading-col1"></div>
-            <div class="export__loading-circle export__loading-row3 export__loading-col2"></div>
-            <div class="export__loading-circle export__loading-row3 export__loading-col3"></div>
-            <div class="export__loading-circle export__loading-row3 export__loading-col4"></div>
-            <div class="export__loading-circle export__loading-row3 export__loading-col5"></div>
-            <div class="export__loading-circle export__loading-row4 export__loading-col2"></div>
-            <div class="export__loading-circle export__loading-row4 export__loading-col3"></div>
-            <div class="export__loading-circle export__loading-row4 export__loading-col4"></div>
-            <div class="export__loading-circle export__loading-row5 export__loading-col3"></div>
-        </div>
-    </div>
-</div>
-
-
-        <div class="column">
-            <div class="resize-tool">
-    <span class="resize-tool__text">Size tool</span>
-    <div class="resize-tool__button-container">
-        <div class="resize-tool__button-size resize-tool__button-size_active" data-size="1">1</div>
-        <div class="resize-tool__button-size" data-size="2">2</div>
-        <div class="resize-tool__button-size" data-size="3">3</div>
-        <div class="resize-tool__button-size" data-size="4">4</div>
-    </div>
-</div>
-
-
-            <div class="instrument-item">
-    <div class="instrument-item__img instrument-item__img_pen"></div>
-</div>
-
-            <div class="instrument-item">
-    <div class="instrument-item__img instrument-item__img_eraser"></div>
-</div>
-
-            <div class="instrument-item">
-    <div class="instrument-item__img instrument-item__img_pipette"></div>
-</div>
-
-            <div class="instrument-item">
-    <div class="instrument-item__img instrument-item__img_bucket"></div>
-</div>
-
-            <div class="column__row">
-                <form class="color-palette-container"  action="">
-    <input class="color-palette-container__input color-palette-container__input_primary color-palette-container__input_active" type="color" value="#ff0000">
-    <input class="color-palette-container__input color-palette-container__input_secondary" type="color" value="#00850a">
-</form>
-
+    <main class="main">
+        <div class="project-description">   
+            <div class="project-description__screenshot"></div>
+            <div class="project-description__container-text">
+                <h1 class="project-description__title">Piskel is a free online editor for animated sprites & pixel art</h1>
+                <p class="project-description__text">Create animations in your browser.</p>
             </div>
         </div>
 
-        <div class="column column_left">
-            <div class="frame frame_sample">
-    <div class="frame__text"></div>
-    <div class="frame__button frame__button_pos_top" data-action="delete"></div>
-    <div class="frame__button frame__button_pos_bottom" data-action="clone"></div>
-    <div class="frame__canvas"></div>
-</div>
+        <div class="sprites-example">
+            <h2 class="sprites-example__title">Example sprites</h2>
 
-<div class="pseudo-frame pseudo-frame_sample"></div>
-
-<div class="button-create-frame">New frame</div>
-
+            <div class="sprites-example__container">
+                <div class="sprites-example__sprite sprites-example__sprite_bg_1"></div>
+                <div class="sprites-example__sprite sprites-example__sprite_bg_2"></div>
+                <div class="sprites-example__sprite sprites-example__sprite_bg_3"></div>
+                <div class="sprites-example__sprite sprites-example__sprite_bg_4"></div>
+                <div class="sprites-example__sprite sprites-example__sprite_bg_5"></div>
+                <div class="sprites-example__sprite sprites-example__sprite_bg_6"></div>
+            </div>
         </div>
 
-        <div class="preview">
-    <div class="preview__animation-player-container">
-        <div class="preview__animation-player"></div>
-    </div>
+        <div class="functional">
+            <h2 class="functional__title">In the editor implemented:</h2>
+            <div class="functional__row">
+                <p class="functional__text"><span class="text-color_gold">Pen</span> - implements per-pixel drawing</p>
+            </div>
+            <div class="functional__row">
+                <p class="functional__text"><span class="text-color_gold">Eraser</span> - allows you to make the pixels transparent</p>
+            </div>
+            <div class="functional__row">
+                <p class="functional__text"><span class="text-color_gold">Paint bucket</span> - allows you to fill the pixels with the selected color</p>
+            </div>
+            <div class="functional__row">
+                <p class="functional__text"><span class="text-color_gold">Pipette color</span> - allows you to choose the color of a particular pixel</p>
+            </div>
+            <div class="functional__row">
+                <p class="functional__text"><span class="text-color_gold">Frames</span> - it is possible to create, delete, copy and change the sequence of frames</p>
+            </div>
+            <div class="functional__row">
+                <p class="functional__text"><span class="text-color_gold">Layers</span> - you can create, delete, move and merge layers</p>
+            </div>
+            <div class="functional__row">
+                <p class="functional__text"><span class="text-color_gold">Preview</span> - it is possible to view the created animation before you download the giff to your PC, you can choose the frame playback speed, as well as you can turn on the full-screen animation view</p>
+            </div>
+            <div class="functional__row">
+                <p class="functional__text"><span class="text-color_gold">Resize canvas</span> - it is possible to manually set the width and height of the canvas</p>
+            </div>
+            <div class="functional__row">
+                <p class="functional__text"><span class="text-color_gold">Uploading a file to the PC</span> - it is possible to upload the created animation to your PC in gif format</p>
+            </div>
+            <div class="functional__row">
+                <p class="functional__text"><span class="text-color_gold">Resize tool</span> - it is possible to choose the size of the tool</p>
+            </div>
+        </div>
+    </main>
 
-    <span class="preview__title-fps">FPS</span>
-
-    <ul class="preview__fps-list">
-        <li class="preview__container-fps-button">
-            <button class="preview__fps-button preview__fps-button_active" data-fps="1">1</button>
-        </li>
-        <li class="preview__container-fps-button">
-            <button class="preview__fps-button" data-fps="2">2</button>
-        </li>
-        <li class="preview__container-fps-button">
-            <button class="preview__fps-button" data-fps="4">4</button>
-        </li>
-        <li class="preview__container-fps-button">
-            <button class="preview__fps-button" data-fps="8">8</button>
-        </li>
-        <li class="preview__container-fps-button">
-            <button class="preview__fps-button" data-fps="16">16</button>
-        </li>
-        <li class="preview__container-fps-button">
-            <button class="preview__fps-button" data-fps="32">32</button>
-        </li>
-        <li class="preview__container-fps-button">
-            <button class="preview__fps-button" data-fps="999">max</button>
-        </li>
-    </ul>
-    
-    <button class="preview__full-screen">Full screen</button>
-</div>
-
-
-        <canvas class="main-canvas">Your browser does not support canvas.</canvas>
-
-    </div>
+    <footer class="footer">
+        <a class="footer__link" href="https://github.com/IvanKononovich">GitHub author</a>
+    </footer>
 <script type="text/javascript" src="app.bundle.js"></script></body>
 </html>
