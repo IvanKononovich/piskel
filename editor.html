@@ -8,120 +8,56 @@
 </head>
 <body>
     <div class="content-wrapper">
-        <form class="resize-canvas" action="">
-    <div class="resize-canvas__content">
-        <div class="resize-canvas__row">
-            <span class="resize-canvas__text">width</span>
-            <input type="text" class="resize-canvas__input resize-canvas__input_x" value="36" data-min="3" data-max="128">
-            <span class="resize-canvas__text">px</span>
-        </div>
-    
-        <div class="resize-canvas__row">
-            <span class="resize-canvas__text">height</span>
-            <input type="text" class="resize-canvas__input resize-canvas__input_y" value="36" data-min="3" data-max="128">
-            <span class="resize-canvas__text">px</span>
-        </div>
-    </div>
-</form>
-
-
-        <div class="export">
-    <div class="export__container">
-        <span class="export__text">Download in GIF format</span>
-        <form class="export__form" action="">
-            <ul class="export__input-list">
-                <li>
-                    <span class="export__input-description">File name</span>
-                    <input class="export__input" type="text" value="newgif" data-data-type="string">
-                </li>
-                <li>
-                    <span class="export__input-description">GIF width (px)</span>
-                    <input class="export__input" type="text" value="200" data-data-type="number" data-size="Width" data-size-max="1200" data-size-min="1">
-                </li>
-                <li>
-                    <span class="export__input-description">GIF height (px)</span>
-                    <input class="export__input" type="text" value="200" data-data-type="number" data-size="Height" data-size-max="1200" data-size-min="1">
-                </li>
-            </ul>
-        </form>
-        <a class="export__link" href="#" download="yourgif.gif">Download</a>
-    </div>
-
-    <div class="export__loading-container">
-        <div class="export__loading">
-            <div class="export__loading-circle export__loading-row1 export__loading-col3"></div>
-            <div class="export__loading-circle export__loading-row2 export__loading-col2"></div>
-            <div class="export__loading-circle export__loading-row2 export__loading-col3"></div>
-            <div class="export__loading-circle export__loading-row2 export__loading-col4"></div>
-            <div class="export__loading-circle export__loading-row3 export__loading-col1"></div>
-            <div class="export__loading-circle export__loading-row3 export__loading-col2"></div>
-            <div class="export__loading-circle export__loading-row3 export__loading-col3"></div>
-            <div class="export__loading-circle export__loading-row3 export__loading-col4"></div>
-            <div class="export__loading-circle export__loading-row3 export__loading-col5"></div>
-            <div class="export__loading-circle export__loading-row4 export__loading-col2"></div>
-            <div class="export__loading-circle export__loading-row4 export__loading-col3"></div>
-            <div class="export__loading-circle export__loading-row4 export__loading-col4"></div>
-            <div class="export__loading-circle export__loading-row5 export__loading-col3"></div>
-        </div>
-    </div>
-</div>
-
-
         <div class="column">
             <div class="resize-tool">
-    <span class="resize-tool__text">Size tool</span>
     <div class="resize-tool__button-container">
-        <div class="resize-tool__button-size resize-tool__button-size_active" data-size="1">1</div>
-        <div class="resize-tool__button-size" data-size="2">2</div>
-        <div class="resize-tool__button-size" data-size="3">3</div>
-        <div class="resize-tool__button-size" data-size="4">4</div>
+        <div class="resize-tool__button-size resize-tool__button-size_active resize-tool__button-size_size_1" data-size="1"></div>
+        <div class="resize-tool__button-size resize-tool__button-size_size_2" data-size="2"></div>
+        <div class="resize-tool__button-size resize-tool__button-size_size_3" data-size="3"></div>
+        <div class="resize-tool__button-size resize-tool__button-size_size_4" data-size="4"></div>
     </div>
 </div>
 
-
-            <div class="instrument-item">
+            <div class="instruments-container">
+                <div class="instrument-item">
     <div class="instrument-item__img instrument-item__img_pen"></div>
 </div>
 
-            <div class="instrument-item">
+                <div class="instrument-item">
     <div class="instrument-item__img instrument-item__img_stroke"></div>
 </div>
 
-            <div class="instrument-item">
+                <div class="instrument-item">
     <div class="instrument-item__img instrument-item__img_eraser"></div>
 </div>
 
-            <div class="instrument-item">
+                <div class="instrument-item">
     <div class="instrument-item__img instrument-item__img_rectangle"></div>
 </div>
 
-            <div class="instrument-item">
-    <div class="instrument-item__img instrument-item__img_circle"></div>
-</div>
-
-            <div class="instrument-item">
+                <div class="instrument-item">
     <div class="instrument-item__img instrument-item__img_pipette"></div>
 </div>
 
-            <div class="instrument-item">
+                <div class="instrument-item">
     <div class="instrument-item__img instrument-item__img_bucket"></div>
 </div>
 
-            <div class="instrument-item">
+                <div class="instrument-item">
     <div class="instrument-item__img instrument-item__img_paint-all-pixels"></div>
 </div>
 
-
+            </div>
             <div class="column__row">
                 <form class="color-palette-container"  action="">
-    <input class="color-palette-container__input color-palette-container__input_primary color-palette-container__input_active" type="color" value="#ff0000">
-    <input class="color-palette-container__input color-palette-container__input_secondary" type="color" value="#00850a">
+    <input class="color-palette-container__input color-palette-container__input_primary color-palette-container__input_active" type="color" value="#ffd700">
+    <input class="color-palette-container__input color-palette-container__input_secondary" type="color" value="#a0a0a0">
 </form>
 
             </div>
         </div>
 
-        <div class="column column_left">
+        <div class="column column_frame">
             <div class="frame frame_sample">
     <div class="frame__text"></div>
     <div class="frame__button frame__button_pos_top" data-action="delete"></div>
@@ -135,24 +71,29 @@
 
         </div>
 
+        <div class="main-canvas-container">
+    <canvas class="main-canvas">Your browser does not support canvas.</canvas>
+</div>
+
+
         <div class="layer">
     <span class="layer__text">Layers</span>
 
     <ul class="layer__button-list">
-        <li>
-            <button class="layer__button" data-action="add">add</button>
+        <li class="layer__container-button">
+            <button class="layer__button layer__button_bg_1" data-action="add"></button>
         </li>
-        <li>
-            <button class="layer__button" data-action="delete">del</button>
+        <li class="layer__container-button">
+            <button class="layer__button layer__button_bg_2" data-action="delete"></button>
         </li>
-        <li>
-            <button class="layer__button" data-action="merge">merge</button>
+        <li class="layer__container-button">
+            <button class="layer__button layer__button_bg_3" data-action="merge"></button>
         </li>
-        <li>
-            <button class="layer__button" data-action="move" data-move="up">up</button>
+        <li class="layer__container-button">
+            <button class="layer__button layer__button_bg_4" data-action="move" data-move="up"></button>
         </li>
-        <li>
-            <button class="layer__button" data-action="move" data-move="down">down</button>
+        <li class="layer__container-button">
+            <button class="layer__button layer__button_bg_5" data-action="move" data-move="down"></button>
         </li>
     </ul>
 
@@ -197,10 +138,68 @@
     
     <button class="preview__full-screen">Full screen</button>
 </div>
+  
+
+        <div class="column column_fixed_right">
+            <form class="resize-canvas" action="">
+    <div class="resize-canvas__content">
+        <div class="resize-canvas__row">
+            <span class="resize-canvas__text">width</span>
+            <input type="text" class="resize-canvas__input resize-canvas__input_x" value="36" data-min="3" data-max="128">
+            <span class="resize-canvas__text">px</span>
+        </div>
+    
+        <div class="resize-canvas__row">
+            <span class="resize-canvas__text">height</span>
+            <input type="text" class="resize-canvas__input resize-canvas__input_y" value="36" data-min="3" data-max="128">
+            <span class="resize-canvas__text">px</span>
+        </div>
+    </div>
+</form>
 
 
-        <canvas class="main-canvas">Your browser does not support canvas.</canvas>
+            <div class="export">
+    <div class="export__container">
+        <span class="export__text">Download in GIF format</span>
+        <form class="export__form" action="">
+            <ul class="export__input-list">
+                <li>
+                    <span class="export__input-description">File name</span>
+                    <input class="export__input" type="text" value="newgif" data-data-type="string">
+                </li>
+                <li>
+                    <span class="export__input-description">GIF width (px)</span>
+                    <input class="export__input" type="text" value="200" data-data-type="number" data-size="Width" data-size-max="1200" data-size-min="1">
+                </li>
+                <li>
+                    <span class="export__input-description">GIF height (px)</span>
+                    <input class="export__input" type="text" value="200" data-data-type="number" data-size="Height" data-size-max="1200" data-size-min="1">
+                </li>
+            </ul>
+        </form>
+        <a class="export__link" href="#" download="yourgif.gif">Download</a>
+    </div>
 
+    <div class="export__loading-container">
+        <div class="export__loading">
+            <div class="export__loading-circle export__loading-row1 export__loading-col3"></div>
+            <div class="export__loading-circle export__loading-row2 export__loading-col2"></div>
+            <div class="export__loading-circle export__loading-row2 export__loading-col3"></div>
+            <div class="export__loading-circle export__loading-row2 export__loading-col4"></div>
+            <div class="export__loading-circle export__loading-row3 export__loading-col1"></div>
+            <div class="export__loading-circle export__loading-row3 export__loading-col2"></div>
+            <div class="export__loading-circle export__loading-row3 export__loading-col3"></div>
+            <div class="export__loading-circle export__loading-row3 export__loading-col4"></div>
+            <div class="export__loading-circle export__loading-row3 export__loading-col5"></div>
+            <div class="export__loading-circle export__loading-row4 export__loading-col2"></div>
+            <div class="export__loading-circle export__loading-row4 export__loading-col3"></div>
+            <div class="export__loading-circle export__loading-row4 export__loading-col4"></div>
+            <div class="export__loading-circle export__loading-row5 export__loading-col3"></div>
+        </div>
+    </div>
+</div>
+
+        </div>
     </div>
 <script type="text/javascript" src="app.bundle.js"></script></body>
 </html>
