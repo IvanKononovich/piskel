@@ -8,6 +8,110 @@
 </head>
 <body>
     <div class="content-wrapper">
+        <div class="hotkeys">
+    <div class="hotkeys__container">
+        <span class="hotkeys__close">X</span>
+        <h3 class="hotkeys__main-title">Keyboard shortcuts</h3>
+
+        <div class="hotkeys__container-keys">
+            <h4 class="hotkeys__title">Tool size shortcuts</h4>
+            <div class="hotkeys__container-keys hotkeys__container-keys_overflow_v">
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__input" data-default-key="1" data-action-name="size1" data-name-component="resizeTool"></div>
+                    <span class="hotkeys__description">Tool size #1</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__input" data-default-key="2" data-action-name="size2" data-name-component="resizeTool"></div>
+                    <span class="hotkeys__description">Tool size #2</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__input" data-default-key="3" data-action-name="size3" data-name-component="resizeTool"></div>
+                    <span class="hotkeys__description">Tool size #3</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__input" data-default-key="4" data-action-name="size4" data-name-component="resizeTool"></div>
+                    <span class="hotkeys__description">Tool size #4</span>
+                </div>
+            </div>
+
+            <h4 class="hotkeys__title">Tool shortcuts</h4>
+            <div class="hotkeys__container-keys hotkeys__container-keys_overflow_v">
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__icon hotkeys__icon_bg_1"></div>
+                    <div class="hotkeys__input" data-default-key="q" data-name-component="pen"></div>
+                    <span class="hotkeys__description">Pen</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__icon hotkeys__icon_bg_2"></div>
+                    <div class="hotkeys__input" data-default-key="w" data-name-component="stroke"></div>
+                    <span class="hotkeys__description">Stroke</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__icon hotkeys__icon_bg_3"></div>
+                    <div class="hotkeys__input" data-default-key="e" data-name-component="eraser"></div>
+                    <span class="hotkeys__description">Eraser</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__icon hotkeys__icon_bg_4"></div>
+                    <div class="hotkeys__input" data-default-key="r" data-name-component="rectangle"></div>
+                    <span class="hotkeys__description">Rectangle</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__icon hotkeys__icon_bg_5"></div>
+                    <div class="hotkeys__input" data-default-key="t" data-name-component="move"></div>
+                    <span class="hotkeys__description">Move</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__icon hotkeys__icon_bg_6"></div>
+                    <div class="hotkeys__input" data-default-key="a" data-name-component="pipetteColor"></div>
+                    <span class="hotkeys__description">Pipette color</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__icon hotkeys__icon_bg_7"></div>
+                    <div class="hotkeys__input" data-default-key="s" data-name-component="paintBucket"></div>
+                    <span class="hotkeys__description">Paint bucket</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__icon hotkeys__icon_bg_8"></div>
+                    <div class="hotkeys__input" data-default-key="d" data-name-component="paintAllPixels"></div>
+                    <span class="hotkeys__description">Paint all pixels</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__icon hotkeys__icon_bg_9"></div>
+                    <div class="hotkeys__input" data-default-key="f" data-name-component="lighten"></div>
+                    <span class="hotkeys__description">Lighten</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__icon hotkeys__icon_bg_10"></div>
+                    <div class="hotkeys__input" data-default-key="g" data-name-component="dithering"></div>
+                    <span class="hotkeys__description">Dithering</span>
+                </div>
+            </div>
+
+            <h4 class="hotkeys__title">Frame shortcuts</h4>
+            <div class="hotkeys__container-keys hotkeys__container-keys_overflow_v">
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__input" data-default-key="v" data-action-name="createFrame" data-name-component="mainCanvas"></div>
+                    <span class="hotkeys__description">Create new frame</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__input" data-default-key="c" data-action-name="cloneFrame" data-name-component="mainCanvas"></div>
+                    <span class="hotkeys__description">Clone active frame</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__input" data-default-key="z" data-action-name="selectPreviousFrame" data-name-component="mainCanvas"></div>
+                    <span class="hotkeys__description">Select previous frame</span>
+                </div>
+                <div class="hotkeys__input-wrapper">
+                    <div class="hotkeys__input" data-default-key="x" data-action-name="selectNextFrame" data-name-component="mainCanvas"></div>
+                    <span class="hotkeys__description">Select next frame</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
         <div class="column">
             <div class="resize-tool">
     <div class="resize-tool__button-container">
@@ -17,6 +121,7 @@
         <div class="resize-tool__button-size resize-tool__button-size_size_4" data-size="4"></div>
     </div>
 </div>
+
 
             <div class="instruments-container">
                 <div class="instrument-item">
@@ -60,6 +165,7 @@
 </div>
 
             </div>
+
             <div class="column__row">
                 <form class="color-palette-container"  action="">
     <input class="color-palette-container__input color-palette-container__input_primary color-palette-container__input_active" type="color" value="#ffd700">
